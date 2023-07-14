@@ -197,3 +197,94 @@ textarea {
   background-color: #fff;
   width: 100%;
 }
+/* responsive styles */
+/* mobile devices */
+.hide {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .header {
+    background-image: none;
+  }
+  nav,
+  nav > ul,
+  .banner,
+  .skills-container,
+  footer,
+  .about-info-container {
+    flex-direction: column;
+  }
+  .skill {
+    text-align: center;
+  }
+  .banner .profile-pic {
+    width: 100%;
+  }
+  .banner,
+  #what-i-do-description {
+    padding: 20px;
+  }
+  .resume-container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .btn-primary {
+    margin-bottom: 15px;
+  }
+  footer,
+  .about {
+    padding: 10px;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  textarea {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .header {
+    background-image: none;
+  }
+  nav,
+  nav > ul,
+  .banner,
+  .skills-container,
+  footer,
+  .about-info-container {
+    flex-direction: column;
+  }
+  nav > ul {
+    gap: 10px;
+  }
+  .skill {
+    text-align: center;
+  }
+  .banner,
+  #what-i-do-description {
+    padding: 20px;
+  }
+  .btn-primary {
+    margin-bottom: 15px;
+  }
+  .resume-container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  footer,
+  .about {
+    padding: 30px;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  textarea {
+    width: 70%;
+  }
+}
